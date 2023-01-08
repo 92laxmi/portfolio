@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+	
+  
+
+</head>
+<body>
+    <div class="container">
+
+		<div class="sidebar sidebarGo">
+			<nav>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a  href="C:\Users\DELL\OneDrive\Desktop\portfolio/intro.html">Intro</a></li>
+					<li><a href="C:\Users\DELL\OneDrive\Desktop\portfolio/skills.html">Skills</a></li>
+					<li><a href="C:\Users\DELL\OneDrive\Desktop\portfolio/blog.html">Blog</a></li>
+					<li><a href="C:\Users\DELL\OneDrive\Desktop\portfolio/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+			<div class="main">
+				<div class="contactform">
+
+					<h1><b>Contact me for work/general enquiry</b></h1><br>
+					<form name="myform" method="post" action=" " onsubmit="return validationform()">
+					First Name:
+                    <input class="input" type="text" name="fname" placeholder="enter first name"><br>
+					Last Name:
+					<input type="text" class="input" name="lname" placeholder="enter last name"><br>
+					Email ID:
+					<input type="email" class="input" name="email" placeholder="enter Email"><br>
+					Message:
+					<input type="text" class="input" name="message" placeholder="Write your message"><br>
+					<button class="cbutton"> Submit</button>
+
+</form>
+
+
+					
+		</div>
+					
+	</div>
+		
+		
+	</div>
+	</div>
+
+	 <script>
+        function validationform(){
+            var fname=document.myform.fname.value;
+            var lname=document.myform.lname.value;
+            var email=document.myform.email.value;
+            var message=document.myform.message.value;
+  
+
+            if(fname ==''){
+                alert("firstName required field.");
+                return false;
+            }
+
+
+            if(lname ==''){
+                alert("lastName required field.");
+                return false;
+            }
+
+
+
+            if(email.length<5){
+                alert("Email is required");
+                return false;
+
+            }
+
+            if(message==''){
+                alert("message required field.");
+                return false;
+            }
+       
+
+        }
+       
+       
+    </script>
+ 
+
+</body>
+</html>
